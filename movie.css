@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    background-image: url('background.png');
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+#banner-section {
+    background-image: url('bannerbackground.png');
+    height: 50px;
+}
+
+#banner {
+    display: block;
+    margin: 0 auto;
+}
+
+#movie-title {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#main-content {
+    width: 850px;
+    margin: 20px auto; /* Added margin to center the main content */
+    border: 4px solid gray;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Increased padding for better spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Added shadow to make the content stand out */
+    background-color: #F5F5DC; /* Soft beige background for the main content area */
+}
+
+/* Rating and Review Section */
+#rating-review-section {
+    width: 550px;
+    background-color: #f4e7c0; /* Light beige background for the reviews section */
+    padding: 20px;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rotten Rating Section */
+#rating-area {
+    background-color: #355E3B; /* Dark green background for Rotten rating */
+    color: white;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    border: 2px solid gray;
+}
+
+#rating-percentage {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* Ensures the percentage stays on top */
+    margin-left: 120px; /* Adjust the position to the right to match reference */
+    display: inline-block;
+}
+
+#rating-area img {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Position the Rotten icon */
+    z-index: 1; /* Ensures the Rotten icon is behind the percentage */
+}
+
+#review-total {
+    font-size: 10pt;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Reviews Section */
+#reviews {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.review-column {
+    width: 48%;
+}
+
+.review {
+    background-color: #E1D697; /* Light background for each review */
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Added shadow for each review box */
+}
+
+.review-icon {
+    float: left;
+    margin-right: 10px;
+}
+
+.review p {
+    margin-left: 40px; /* to avoid text overlap with the icon */
+    margin-bottom: 10px;
+}
+
+.reviewer-info {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.reviewer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.reviewer {
+    font-weight: bold;
+}
+
+.publication {
+    font-style: italic;
+    margin-top: 3px; /* Ensures the publication is placed below the name */
+}
+
+/* Right Column Padding Adjustment */
+.review-column:last-child {
+    padding-right: 30px;  /* Add more padding to the right column */
+}
+
+/* General Overview Section */
+#general-overview {
+    width: 250px;
+    background-color: #A2B964;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added shadow to make it stand out */
+}
+
+#general-overview h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+#movie-poster {
+    width: 100%;
+    margin: 10px 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+/* Footer */
+#footer {
+    background-color: #A2B964;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#footer a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
